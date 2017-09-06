@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="VueSearch">
+  <DataContextMoniker Name="/VueSearchDataContext" />
+  <nestedChildShapes>
+    <classShape Id="99b0c51e-3b3d-4fc8-8a8a-d392854ba366" absoluteBounds="1.375, 0.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/VueSearchDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd9a398e-fa86-4e7b-9171-763c0e1fdb6e" absoluteBounds="1.3900000000000001, 1.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

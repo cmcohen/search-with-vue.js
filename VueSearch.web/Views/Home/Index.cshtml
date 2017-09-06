@@ -1,0 +1,36 @@
+﻿
+<div class="col-md-6 col-md-offset-3" id="app">
+<div class="well">
+    <input type="text" v-model="searchTerm" class="form-control" placeholder="search by product"/>
+    <br />
+    <button class="btn btn-success" v-on:click="find">Search</button>
+    <br />
+</div>
+    <h3>{{searchHeader}}</h3>
+    <select v-on:change="displayAmount" v-model="dropDown">
+        <option value=0>--Showing all results--</option>
+        <option value=10>Show 10</option>
+        <option value=15>Show 15</option>
+        <option value=20>Show 20</option>
+    </select>
+    <table class="table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Quantity Per Unit</th>
+            <th>Unit Price</th>
+        </tr>
+        <template v-for="product in products">
+            <tr>
+                <td>{{product.ProductName}}</td>
+                <td>{{product.QuantityPerUnit}}</td>
+                <td>${{product.UnitPrice}}</td>
+            </tr>
+        </template>
+    </table>
+</div>
+
+@section scripts{
+    
+<script src="~/Scripts/vue.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+    }
